@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #222;
+  color: white;
+}
+
+.logo img {
+  width: 140px;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+
+nav ul.menu li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+nav ul.menu li a:hover::after {
+  width: 100%;
+}
+
+.cart a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+}
+
+.icon {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.cart-count {
+  font-size: 16px;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.about-hero {
+  background-image: url("https://img.goodfon.ru/original/3000x2000/2/3d/lyzhnik-shlem-ochki-kostium-perchatki-palki-lyzhi-sneg-zima.jpg");
+  background-size: cover;
+  background-position: inherit;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.about-hero .hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 800px;
+}
+.split-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+  color: #333;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.text-container p strong {
+  font-weight: bold;
+}
+.team {
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  margin: 10px 0;
+}
+
+.contact-info {
+  background-color: #f4f4f4;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  width: 22%;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-column form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-column form button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-column form button:hover {
+  background-color: #444;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a img {
+  width: 45px;
+  height: 37px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+.last {
+  background-image: url(https://www.momentskis.com/cdn/shop/files/Hero-Closer_3000x.jpg?v%3D1722440864);
+  background-size: cover;
+  background-position: inherit;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.last .laste {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 800px;
+}
+.big {
+  font-size: large;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav ul.menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .about-hero,
+  .last {
+    height: 400px;
+  }
+
+  .about-hero .hero-content,
+  .last .laste {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .split-section {
+    flex-direction: column;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .about-hero,
+  .last {
+    height: 300px;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .contact-info h2 {
+    font-size: 1.5rem;
+  }
+}
